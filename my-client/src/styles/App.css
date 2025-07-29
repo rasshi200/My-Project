@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #6c5ce7;        /* Purple for headings */
+  --navbar-bg: #00b894;            /* Mint green navbar */
+  --nav-link: #2d3436;             /* Dark gray text */
+  --nav-hover-bg: #ff6f61;         /* Coral pink on hover */
+  --footer-bg: #fd79a8;            /* Footer background */
+  --footer-text: white;            /* Footer text */
+  --background: #fffbe6;           /* Light cream background */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+}
+
+.app-container {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 60px; /* space for fixed footer */
+}
+
+/* Heading */
+.heading h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ffeaa7;
+}
+
+nav {
+  background-color:#00b894;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+nav a:hover {
+  color: white;
+  background-color:seagreen;
+}
+
+nav a.active {
+  color:seagreen;
+  background: rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+nav a.active::after {
+  content: none;
+  /* Remove underline effect */
+}
+
+
+
+
+/* Footer */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--footer-bg); 
+  color: var(--footer-text);
+  text-align: center;
+  padding: 6px 0;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 22px;
+  }
+
+
+nav {
+    justify-content: flex-start;
+    gap: 3px;
+    padding: 8px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+}

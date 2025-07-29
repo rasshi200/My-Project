@@ -1,0 +1,129 @@
+/* Base Styles */
+body {
+  background-color: #7ac46bad; /* Soft green background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.getid-container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff; /* White container */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.getid-title {
+  text-align: center;
+  color: #2c3e50; /* Deep blue heading */
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.getid-label {
+  display: block;
+  font-weight: 700; /* Bold */
+  margin-bottom: 6px;
+  color: #34495e; /* Dark blue */
+}
+
+.getid-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #2c3e50;
+  transition: border-color 0.3s ease;
+}
+
+.getid-input:focus {
+  outline: none;
+  border-color: #1abc9c; /* Teal border on focus */
+  outline: 2px dashed #1abc9c;
+  outline-offset: 2px;
+}
+
+.getid-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1abc9c; /* Mint green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.getid-button:hover {
+  background-color: #16a085; /* Darker mint on hover */
+}
+
+.getid-button:active {
+  transform: scale(0.98);
+}
+
+.getid-result {
+  background-color: #ffffff;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .getid-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .getid-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .getid-input,
+  .getid-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .getid-result {
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .getid-container {
+    padding: 15px;
+    margin: 40px auto;
+  }
+
+  .getid-title {
+    font-size: 18px;
+  }
+
+  .getid-button {
+    font-size: 14px;
+  }
+
+  .getid-input {
+    font-size: 14px;
+  }
+
+  .getid-result {
+    font-size: 13px;
+  }
+}

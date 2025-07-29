@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #6c5ce7;
+  --navbar-bg: #00b894;
+  --nav-hover-bg: #ff6f61;
+  --footer-bg: #fd79a8;
+  --footer-text: white;
+  --background: #fffbe6;
+  --card-bg: #ffffff;
+  --highlight-border: #00b894;
+  --button-bg: #00b894;
+  --button-hover: #55efc4;
+  --text-dark: #2d3436;
+}
+
+.findall-container {
+  padding: 30px;
+  background-color: var(--background);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.findall-container h1 {
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.findall-container hr {
+  margin: 10px 0 20px;
+}
+
+.findall-container form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.findall-container button {
+  padding: 12px 24px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.findall-container button:hover {
+  background-color: var(--button-hover);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  color: var(--text-dark);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .findall-container {
+    padding: 20px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  tbody td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px;
+    font-weight: bold;
+    color: var(--text-dark);
+  }
+}

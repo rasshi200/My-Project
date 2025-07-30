@@ -12,7 +12,7 @@ export function Add() {
   async function addHandler(e) {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/api/employees', {
+      const response = await axios.post('https://my-project-ntck.onrender.com/api/employees', {
         empNo: formData.empNo,
         empName: formData.empName,
         empSal: formData.empSal

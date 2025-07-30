@@ -9,7 +9,7 @@ export function GetId() {
     async function getData(e)
     {
         try{
-            const response = await axios.get(`http://localhost:3001/api/employees/${id}`);
+            const response = await axios.get(`https://my-project-ntck.onrender.com/api/employees/${id}`);
             setEmployee(response.data);
         }
         catch(err)

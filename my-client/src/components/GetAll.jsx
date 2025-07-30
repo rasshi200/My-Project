@@ -8,7 +8,7 @@ export function GetAll() {
    {
     e.preventDefault();
     try{
-        const response = await axios.get('http://localhost:3001/api/employees');
+        const response = await axios.get('https://my-project-ntck.onrender.com/api/employees');
         setEmployees(response.data);
 
     }
